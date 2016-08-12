@@ -1,0 +1,18 @@
+<ion-view style="" title="SwitchControl">
+    <ion-content class="has-header" scroll="false" overflow-scroll="true" padding="true">
+<!--     <div class="card">
+  		<div class="item item-text-wrap">
+    	Test: {{test}}
+  		</div>
+  		<div class="item item-text-wrap">
+    	ManualMode: {{manualMode}}
+  		</div>
+  		<div class="item item-text-wrap">
+    	Switch: {{manualSwitchState}}
+  		</div>
+	</div>
+ --> 	<ion-checkbox ng-model="manualMode" ng-change="updateManualModeService()" style="">Manual Switching enabled</ion-checkbox>
+    <div style="height: 50px;" class="spacer"></div>
+    <ion-toggle ng-model="manualSwitchState" ng-change="updateManualModeService()" style="" toggle-class="toggle-positive">Switch: </ion-toggle>
+    </ion-content>
+</ion-view>
